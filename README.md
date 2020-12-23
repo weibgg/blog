@@ -10,14 +10,7 @@ fork from [My Blog](https://github.com/ZHENFENG13/My-Blog) , 该作者是在 [Ta
 1. 将`1.5.1.RELEASE`修改为`2.2.5.RELEASE`
 2. tale.sql中添加创建DATABASE操作
 3. 将MySQL驱动版本指定为5.1.47
-4. 將原有的druid依赖修改为druid场景启动器
- ```xml
-<dependency>
-  <groupId>com.alibaba</groupId>
-    <artifactId>druid-spring-boot-starter</artifactId>
-  <version>1.1.10</version>
-</dependency>
- ```
+4. 將原有的druid依赖为1.1.23
 5. 升级pagehelper到1.2.5
 6. 升级后会去t_contents中查询favicon.ico数据，但是原始建表语句中不包含此语句导致不能成功登录，现零时为t_contents添加一条slug为`favicon.ico`的数据(后期有空再优化)
 > 2020-12-24零时修改一版，后续有空再继续升级包括但不限于模块拆分、引入微服务及其他更符合当下使用的框架...
