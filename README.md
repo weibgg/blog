@@ -6,10 +6,28 @@ fork from [My Blog](https://github.com/ZHENFENG13/My-Blog) , 该作者是在 [Ta
 
 `My-Blog` 使用的是 Docker + SpringBoot + Mybatis + thymeleaf 打造的一个个人博客模板。
 
-自己花了十天的时间把整个项目的代码都敲了一遍，熟悉了整个项目，做了优化，去除了 Docker，
-其中修改了原来的一些 bug，并在原作者的项目中提出了 issue ， 原作者已修复。
+## 根据原项目修改记录
+1. 将`1.5.1.RELEASE`修改为`2.2.5.RELEASE`
+2. tale.sql中添加创建DATABASE操作
+3. 将MySQL驱动版本指定为5.1.47
+4. 將原有的druid依赖修改为druid场景启动器
+ ```xml
+<dependency>
+  <groupId>com.alibaba</groupId>
+    <artifactId>druid-spring-boot-starter</artifactId>
+  <version>1.1.10</version>
+</dependency>
+ ```
+5. 升级pagehelper到1.2.5
+6. 升级后会去t_contents中查询favicon.ico数据，但是原始建表语句中不包含此语句导致不能成功登录，现零时为t_contents添加一条slug为`favicon.ico`的数据(后期有空再优化)
+> 2020-12-24零时修改一版，后续有空再继续升级包括但不限于模块拆分、引入微服务及其他更符合当下使用的框架...
 
-喜欢该项目的话，可以给项目点个 star，如果你想在这基础上修改，那么建议你 fork 该项目，然后再修改哦。
+## 启动流程
+1. 获取对应Maven依赖
+2. 执行resources/sql/tale.sql
+3. 启动项目
+4. 访问client：http://localhost:8081/
+5. 访问admin：http://localhost:8081/admin/login  user:admin,password:123456
 
 ## 功能如下：
 
