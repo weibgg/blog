@@ -18,9 +18,10 @@ fork from [My Blog](https://github.com/ZHENFENG13/My-Blog) , 该作者是在 [Ta
 ## 启动流程
 1. 获取对应Maven依赖
 2. 执行resources/sql/tale.sql
-3. 启动项目
-4. 访问client：http://localhost:8081/
-5. 访问admin：http://localhost:8081/admin/login  user:admin,password:123456
+3. 根据自身情况修改application-jdbc.properties中关于数据库的配置信息
+4. 启动项目
+5. 访问client：http://localhost:8081/
+6. 访问admin：http://localhost:8081/admin/login  user:admin,password:123456
 
 ## 功能如下：
 
