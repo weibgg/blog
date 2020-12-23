@@ -7,7 +7,7 @@ fork from [My Blog](https://github.com/ZHENFENG13/My-Blog) , 该作者是在 [Ta
 `My-Blog` 使用的是 Docker + SpringBoot + Mybatis + thymeleaf 打造的一个个人博客模板。
 
 ## 根据原项目修改记录
-1. 将`1.5.1.RELEASE`修改为`2.2.5.RELEASE`
+1. 将spring boot的版本从`1.5.1.RELEASE`修改为`2.2.5.RELEASE`
 2. tale.sql中添加创建DATABASE操作
 3. 将MySQL驱动版本指定为5.1.47
 4. 將原有的druid依赖为1.1.23
