@@ -13,7 +13,7 @@ fork from [My Blog](https://github.com/ZHENFENG13/My-Blog) , 该作者是在 [Ta
 4. 將原有的druid依赖为1.1.23
 5. 升级pagehelper到1.2.5
 6. 升级后会去t_contents中查询favicon.ico数据，但是原始建表语句中不包含此语句导致不能成功登录，现零时为t_contents添加一条slug为`favicon.ico`的数据(后期有空再优化)
-> 2020-12-24零时修改一版，后续有空再继续升级包括但不限于模块拆分、引入微服务及其他更符合当下使用的框架...
+> 2020-12-24零时修改一版，后续有空再继续升级...
 
 ## 启动流程
 1. 获取对应Maven依赖
